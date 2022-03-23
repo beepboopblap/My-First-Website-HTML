@@ -1,4 +1,4 @@
 **My First Website**
 
-beepboopblap's first website using html and css. (maybe java script in the future)
+beepboopblap's first website using html, css, and javascript
 

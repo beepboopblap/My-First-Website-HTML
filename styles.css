@@ -1,9 +1,15 @@
-.testText {
-  color: blue;
+.top_buttons {
+  text-decoration: none;
+  padding: 10px;
+}
+.top_buttons:hover {
+  text-decoration: none;
 }
 img {
   width: 250px;
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 .sheepImage {
   height: 150px;
@@ -18,7 +24,7 @@ em {
 }
 .title {
   color: blue;
-  padding-left: 780px;
+  padding-left: 280px;
   font-size: 50px;
   font-weight: bold;
   font-family: "Ubuntu", sans-serif;
@@ -70,7 +76,7 @@ a:hover {
   text-decoration: underline;
 }
 .me {
-  padding-left: 828px;
+  padding-left: 780px;
 }
 html {
   background-color: #316086;

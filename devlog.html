@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <title>Dev Log for my Projects</title>
+</head>
+<body>
+  <div>
+    <button type="button" onclick="clickfuncHome()">
+      <ion-icon name="home-outline" style="font-size:30px; float: left"></ion-icon>
+    </button>
+  </div>
+  <script type="text/javascript">
+    function clickfuncHome() {
+      window.location.href = "index.html" 
+    }
+ </script>
+  <div style="padding:10px; width:50%;padding-left: 445px; padding-bottom: 1px;">
+    <h1 class="title">Dev Log</h1> 
+ </div>
+ <div class="paragraph">
+  <h2 style="color: black; font-size: 35px; text-decoration: underline; font-family: 'Ubuntu', sans-serif;">What is this?</h2>
+  <div class="paragraphsub"> 
+    <li>This is where I write about what is going on in my code for some of my projects</li>
+    <li>You are welcome to use some of this code and explanation to aid some of your projects as well!</li>
+    <li>All of these projects were written in Python</li>
+    <li>You may find the full code for any of these projects on my <a href="https://github.com/beepboopblap?tab=repositories">GitHub</a> repositories page</li>
+  </div>
+  <h2 style="color: black; font-size: 35px; text-decoration: underline; font-family: 'Ubuntu', sans-serif;">AI Virtual Assistant (JBot)</h2>
+  <img src="JBot_logo_new.png" alt="JBot Logo" style="width:9%; border: 5px solid black">
+  <p style="padding-bottom:4px">JBot Virtual Assistant Logo</p>
+  <div class="paragraphsub">
+    <li>Since this AI virtual assistant project is my latest creation, I decided to put the code for it at the top of the page</li>
+    <li>The code snippets that was picked out of the code in my opinion is the ones that are worth sharing and explaining the most</li>
+  </div>
+  <div>‎</div>
+  <div class="paragraphsub">
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+      weather_inp = [<span style="color: #aa5500">&quot;Weather&quot;</span>, <span style="color: #aa5500">&quot;weather&quot;</span>, <span style="color: #aa5500">&quot;WEATHER&quot;</span>, <span style="color: #aa5500">&quot;weather?&quot;</span>]
+      joke_inp = [<span style="color: #aa5500">&quot;Joke&quot;</span>, <span style="color: #aa5500">&quot;joke&quot;</span>, <span style="color: #aa5500">&quot;JOKE&quot;</span>, <span style="color: #aa5500">&quot;jokes&quot;</span>, <span style="color: #aa5500">&quot;Jokes&quot;</span>, <span style="color: #aa5500">&quot;laugh&quot;</span>, <span style="color: #aa5500">&quot;Laugh&quot;</span>]
+      google_inp = [<span style="color: #aa5500">&quot;Google&quot;</span>, <span style="color: #aa5500">&quot;google&quot;</span>, <span style="color: #aa5500">&quot;search&quot;</span>, <span style="color: #aa5500">&quot;SEARCH&quot;</span>, <span style="color: #aa5500">&quot;Search&quot;</span>]
+      time_inp = [<span style="color: #aa5500">&quot;Time&quot;</span>, <span style="color: #aa5500">&quot;time&quot;</span>, <span style="color: #aa5500">&quot;TIME&quot;</span>, <span style="color: #aa5500">&quot;time?&quot;</span>, <span style="color: #aa5500">&quot;Time?&quot;</span>]
+      date_inp = [<span style="color: #aa5500">&quot;Date&quot;</span>, <span style="color: #aa5500">&quot;date&quot;</span>, <span style="color: #aa5500">&quot;DATE&quot;</span>, <span style="color: #aa5500">&quot;date?&quot;</span>, <span style="color: #aa5500">&quot;Date?&quot;</span>]
+      flipcoin_inp = [<span style="color: #aa5500">&quot;Flip&quot;</span>, <span style="color: #aa5500">&quot;flip&quot;</span>]
+      name_inp = [<span style="color: #aa5500">&quot;name?&quot;</span>, <span style="color: #aa5500">&quot;name&quot;</span>]
+      age_inp = [<span style="color: #aa5500">&quot;Age&quot;</span>, <span style="color: #aa5500">&quot;age&quot;</span>, <span style="color: #aa5500">&quot;age?&quot;</span>, <span style="color: #aa5500">&quot;Age?&quot;</span>, <span style="color: #aa5500">&quot;old?&quot;</span>, <span style="color: #aa5500">&quot;old&quot;</span>]
+      gender_inp = [<span style="color: #aa5500">&quot;Gender&quot;</span>, <span style="color: #aa5500">&quot;gender&quot;</span>, <span style="color: #aa5500">&quot;Gender?&quot;</span>, <span style="color: #aa5500">&quot;gender?&quot;</span>]
+      passgen_inp = [<span style="color: #aa5500">&quot;Password&quot;</span>, <span style="color: #aa5500">&quot;generate&quot;</span>, <span style="color: #aa5500">&quot;Generate&quot;</span>, <span style="color: #aa5500">&quot;password&quot;</span>]
+      quit_inp = [<span style="color: #aa5500">&quot;quit&quot;</span>, <span style="color: #aa5500">&quot;QUIT&quot;</span>, <span style="color: #aa5500">&quot;Quit&quot;</span>]
+      stopwatch_inp = [<span style="color: #aa5500">&quot;stopwatch&quot;</span>, <span style="color: #aa5500">&quot;Stopwatch&quot;</span>]
+      creator_inp = [<span style="color: #aa5500">&quot;created&quot;</span>, <span style="color: #aa5500">&quot;Created&quot;</span>]
+      JBot_inp = [<span style="color: #aa5500">&quot;JBot&quot;</span>, <span style="color: #aa5500">&quot;jbot&quot;</span>, <span style="color: #aa5500">&quot;Jbot&quot;</span>, <span style="color: #aa5500">&quot;jBot&quot;</span>]
+      ethnicity_inp = [<span style="color: #aa5500">&quot;From&quot;</span>, <span style="color: #aa5500">&quot;from&quot;</span>]
+      me_inp = [<span style="color: #aa5500">&quot;beepboopblap&quot;</span>]
+      feeling_inp = [<span style="color: #aa5500">&quot;How&quot;</span>, <span style="color: #aa5500">&quot;how&quot;</span>]
+      love_inp = [<span style="color: #aa5500">&quot;love&quot;</span>, <span style="color: #aa5500">&quot;Love&quot;</span>]
+      who_inp = [<span style="color: #aa5500">&quot;who&quot;</span>, <span style="color: #aa5500">&quot;Who&quot;</span>]
+      email_inp = [<span style="color: #aa5500">&quot;Email&quot;</span>, <span style="color: #aa5500">&quot;Gmail&quot;</span>, <span style="color: #aa5500">&quot;gmail&quot;</span>, <span style="color: #aa5500">&quot;email&quot;</span>, <span style="color: #aa5500">&quot;mail&quot;</span>]
+      call_inp = [<span style="color: #aa5500">&quot;Call&quot;</span>, <span style="color: #aa5500">&quot;call&quot;</span>]
+      rps_inp = [<span style="color: #aa5500">&quot;rps&quot;</span>]
+      nothing_inp = [<span style="color: #aa5500">&quot;nothing&quot;</span>, <span style="color: #aa5500">&quot;Nothing&quot;</span>, <span style="color: #aa5500">&quot;NOTHING&quot;</span>]
+      version_inp = [<span style="color: #aa5500">&quot;--version&quot;</span>]
+                                      </pre></div>
+                                        </div>
+    <div>‎</div>
+    <div class="paragraphsub">
+      <li>This code snippet above is how the AI detection to text works</li>
+      <li>I actually put a bunch of key words that is used when asking for something from the ai</li>
+      <li>For example, if I input...</li>
+      <div>‎</div>
+      <code style="background-color:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">What can JBot do for you today?: Tell me about the weater this morning.</code>
+      <div>‎</div>
+      <li>Then the ai will check for the word 'weather' because it was added into the <code>weather_inp</code> list and run the weather function</li>
+      <li>The same works for any other JBot command</li>
+      <li>I decided to use this detection method instead of...</li>
+      <div>‎</div>
+      <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">if</span> user_input == <span style="color: #aa5500">&quot;What&#39;s the weather like today?&quot;</span>: 
+      <span style="color: #0000aa">print</span>(weather_info)</pre></div>
+  
+      <div>‎</div>
+      <li>Because of how adaptive the 'keyword' method is unlike entering every single way to ask for the weather information</li>
+    </div>
+    <div>‎</div>
+    <div class="paragraphsub">
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">while</span> assistant:
+
+    user_inp = <span style="color: #00aaaa">input</span>(colored(<span style="color: #aa5500">&quot;What can JBot do for you today?: &quot;</span>, <span style="color: #aa5500">&quot;green&quot;</span>))
+    user_inp = user_inp.split()
+
+    <span style="color: #0000aa">for</span> i <span style="color: #0000aa">in</span> user_inp:
+
+        <span style="color: #0000aa">if</span> i <span style="color: #0000aa">in</span> weather_input:
+             <span style="color: #0000aa">print</span>(weather_info)</pre></div>
+    </div>
+    <div>‎</div>
+    <div class="paragraphsub">
+      <li>Following on fromt the last snippet, I split the user input and use a <code style="background-color:white;">for</code> loop to iterate through the user input and see if it matches with any of the keywords in the keyword list</li>
+      <li>If there is a match to any of the keywords in the keyword list, the <code style="background-color:white;">if</code> statement for the keyword will be activated and run the specific command</li>
+    </div>
+    <div>‎</div>
+    <div>‎</div>
+    <a href="#">Jump to Top</a>
+ </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

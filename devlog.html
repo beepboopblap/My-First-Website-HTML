@@ -15,10 +15,17 @@
     <button type="button" onclick="clickfuncHome()">
       <ion-icon name="home-outline" style="font-size:30px; float: left"></ion-icon>
     </button>
+    <button type="button" onclick="clickfuncGit()"> 
+      <ion-icon name="logo-github" style="font-size: 30px;"></ion-icon>
+    </button>
   </div>
+  
   <script type="text/javascript">
     function clickfuncHome() {
       window.location.href = "index.html" 
+    }
+    function clickfuncGit() {
+      window.location.href = "https://github.com/beepboopblap?tab=repositories";
     }
  </script>
   <div style="padding:10px; width:50%;padding-left: 445px; padding-bottom: 1px;">
@@ -116,14 +123,19 @@
       <div>‎</div>
       <li>If there is a match to any of the keywords in the keyword list, the <code style="background-color:black; color:lightblue; padding:2px; border-radius: 6px;">if</code> statement for the keyword will be activated and run the specific command</li>
     </div>
+  </div>
+  <div>‎</div>
     <h2 style="color: black; font-size: 35px; text-decoration: underline; font-family: 'Ubuntu', sans-serif;">Platform game (Pygame)</h2>
     <img src="prev2 copy.png" alt="level 2 of the platform game" style="width: 17%">
     <div>‎</div>
+  
     <div class="paragraphsub">
       <li>One of my other big projects include a platform game I created using pygame</li>
       <li>This project included lots of border and padding between the player and walls, platforms, and the screen itself.</li>
       <li>I will explain how borders work using python and how to code them</li>
     </div>
+    <div>‎</div>
+  <div class="paragraphsub">
     <div>‎</div>
     <div>
       <div style="background: #272822; overflow:auto;width:auto;border:solid; color:white"><pre style="margin: 0; line-height: 125%">  
@@ -166,6 +178,11 @@
       <li>Player movement has a similar concept to screen borders as program moves the player to a certain direction as a key is pressed.</li>
       <li>I decided to make the example code for this simpler so it would be easier to explain in text.</li>
       <li>In this code snippet, pressing the key 'w' on your keyboard will lead to the player moving -40 in the y direction (y is in the up or down direction while x is in the left or right direction)</li>
+      <div style="background: #272822; overflow:auto;width:auto;border:solid; color:white"><pre style="margin: 0; line-height: 125%">   
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">event</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">key</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">ord(</span><span style="color: #e6db74">&quot;w&quot;</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">player_y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">player_y</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">40</span>
+     </pre></div>
+     
     </div>
 
     <div>‎</div>

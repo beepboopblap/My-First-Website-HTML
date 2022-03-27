@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <title>Dev Log for my Projects</title>
+  <title>Dev Logs for my Projects</title>
 </head>
 <body>
   <div>
@@ -22,7 +22,7 @@
     }
  </script>
   <div style="padding:10px; width:50%;padding-left: 445px; padding-bottom: 1px;">
-    <h1 class="title">Dev Log</h1> 
+    <h1 class="title">Dev Logs</h1> 
  </div>
  <div class="paragraph">
   <h2 style="color: black; font-size: 35px; text-decoration: underline; font-family: 'Ubuntu', sans-serif;">What is this?</h2>
@@ -116,6 +116,58 @@
       <div>‎</div>
       <li>If there is a match to any of the keywords in the keyword list, the <code style="background-color:black; color:lightblue; padding:2px; border-radius: 6px;">if</code> statement for the keyword will be activated and run the specific command</li>
     </div>
+    <h2 style="color: black; font-size: 35px; text-decoration: underline; font-family: 'Ubuntu', sans-serif;">Platform game (Pygame)</h2>
+    <img src="prev2 copy.png" alt="level 2 of the platform game" style="width: 17%">
+    <div>‎</div>
+    <div class="paragraphsub">
+      <li>One of my other big projects include a platform game I created using pygame</li>
+      <li>This project included lots of border and padding between the player and walls, platforms, and the screen itself.</li>
+      <li>I will explain how borders work using python and how to code them</li>
+    </div>
+    <div>‎</div>
+    <div>
+      <div style="background: #272822; overflow:auto;width:auto;border:solid; color:white"><pre style="margin: 0; line-height: 125%">  
+      <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">player_x</span> <span style="color: #f92672">&gt;=</span> <span style="color: #ae81ff">755</span><span style="color: #f8f8f2">:</span>
+      
+          <span style="color: #f8f8f2">level_2</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">True</span>
+          <span style="color: #f8f8f2">level_1</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">False</span>
+          <span style="color: #f8f8f2">player_y</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">350</span>
+          <span style="color: #f8f8f2">player_x</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">20</span>
+      
+      <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">player_x</span> <span style="color: #f92672">&lt;=</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">:</span>
+      
+          <span style="color: #f8f8f2">player_x</span> <span style="color: #f92672">=</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">10</span>
+      </pre></div>
+      
+    </div>
+    <div>‎</div>
+    <div class="paragraphsub">
+      <li>In this code snippet, we are using <code style="background-color:black; color:lightblue; padding:2px; border-radius: 6px;">if</code> statement to ask the code "is this player beyondor equal this x and y coordinates?</li>
+      <li>If this is the case, the program will return the player to the back to that specific x and y coordinate</li>
+      <li>Doing so will not be visible to the human eye because the code is putting the player back at where its supposed to be really quickly which therefore creates a 'screen border' effect</li>
+    </div>
+    <div>‎</div>
+    <div>
+      <div style="background: #272822; overflow:auto;width:auto;border:solid; color:white"><pre style="margin: 0; line-height: 125%">                
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">event</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">key</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">ord(</span><span style="color: #e6db74">&quot;w&quot;</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">player_y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">player_y</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">40</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">event</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">key</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">ord(</span><span style="color: #e6db74">&quot;s&quot;</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">player_y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">player_y</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">40</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">event</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">key</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">ord(</span><span style="color: #e6db74">&quot;a&quot;</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">player_x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">player_x</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">40</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">event</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">key</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">ord(</span><span style="color: #e6db74">&quot;d&quot;</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">player_x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">player_x</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">40</span>
+
+</pre></div>
+
+    </div>
+    <div>‎</div>
+    <div class="paragraphsub">
+      <li>Player movement has a similar concept to screen borders as program moves the player to a certain direction as a key is pressed.</li>
+      <li>I decided to make the example code for this simpler so it would be easier to explain in text.</li>
+      <li>In this code snippet, pressing the key 'w' on your keyboard will lead to the player moving -40 in the y direction (y is in the up or down direction while x is in the left or right direction)</li>
+    </div>
+
     <div>‎</div>
     <div>‎</div>
     <a href="#">Jump to Top</a>
